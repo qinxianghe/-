@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.21)
+project(c_data_structures LANGUAGES C)
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+add_executable(sequence_list_demo examples/sequence_list_demo.c src/sl.c)
+target_include_directories(sequence_list_demo PRIVATE include)
